@@ -5,7 +5,7 @@ import Drawer from 'components/drawer';
 import {IoMdClose, IoMdMenu} from 'react-icons/io';
 import {Link} from 'react-scroll';
 import {FaFacebookF, FaTwitter, FaGithubAlt, FaDribbble} from 'react-icons/fa';
-import menuItems from './header.data';
+import {menuItems} from './header.data';
 
 const social = [
     {

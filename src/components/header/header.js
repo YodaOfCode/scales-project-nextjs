@@ -5,7 +5,7 @@ import {Link} from 'react-scroll';
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo.svg';
 import MobileDrawer from './mobile-drawer';
-import menuItems from './header.data';
+import {menuItems} from './header.data';
 
 export default function Header({className}) {
     return (
@@ -19,7 +19,6 @@ export default function Header({className}) {
                             to={menuItem.path}
                             spy={true}
                             smooth={true}
-                            offset={-70}
                             duration={500}
                             key={index}
                         >

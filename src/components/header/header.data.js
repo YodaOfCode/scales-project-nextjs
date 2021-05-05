@@ -1,4 +1,4 @@
-export default [
+export const menuItems = [
   {
     path: 'home',
     label: 'Головна',
@@ -9,7 +9,7 @@ export default [
   },
   {
     path: 'pricing',
-    label: 'Ціна',
+    label: 'Ціна та терміни',
   },
   {
     path: 'testimonial',

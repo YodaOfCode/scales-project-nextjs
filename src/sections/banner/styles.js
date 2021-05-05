@@ -1,32 +1,7 @@
-/** @jsx jsx */
-import {jsx} from 'theme-ui';
-import {Container, Box, Heading, Text, Image, Button} from 'theme-ui';
-import BannerImg from 'assets/banner-thumb.png';
-import ShapeLeft from 'assets/shape-left.png';
-import ShapeRight from 'assets/shape-right.png';
+import ShapeLeft from "../../assets/shape-left.png";
+import ShapeRight from "../../assets/shape-right.png";
 
-export default function Banner() {
-    return (
-        <section sx={styles.banner} id='home'>
-            <Container sx={styles.banner.container}>
-                <Box sx={styles.banner.contentBox}>
-                    <Heading as='h1' variant='heroPrimary'>
-                        Оренда дитячих вагів
-                    </Heading>
-                    <Text as='p' variant='heroSecondary'>
-                        На нашому сайті, ви можете знайти та орендувати чудові дитячі ваги на будь-який термін
-                    </Text>
-                    <Button variant='primary'>Детальніше</Button>
-                </Box>
-                <Box sx={styles.banner.imageBox}>
-                    <Image src={BannerImg} alt='banner'/>
-                </Box>
-            </Container>
-        </section>
-    );
-}
-
-const styles = {
+export const styles = {
     banner: {
         pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
         pb: [2, null, 0, null, 2, 0, null, 5],
@@ -78,6 +53,7 @@ const styles = {
             img: {
                 position: 'relative',
                 height: [245, 'auto'],
+                borderRadius: '25px',
             },
         },
     },

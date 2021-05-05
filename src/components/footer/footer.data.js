@@ -1,5 +1,5 @@
 export default {
-  menuItem: [
+  menuItems: [
     {
       path: '/',
       label: 'Home',

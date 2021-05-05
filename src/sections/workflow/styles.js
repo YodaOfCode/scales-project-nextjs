@@ -1,53 +1,8 @@
-/** @jsx jsx */
-import {jsx} from 'theme-ui';
-import {Container, Grid, Box, Heading, Text} from 'theme-ui';
-import SectionHeader from 'components/section-header';
+import PatternBG from "../../assets/patternBG.png";
+import ArrowOdd from "../../assets/arrowOdd.svg";
+import ArrowEven from "../../assets/arrowEven.svg";
 
-import PatternBG from 'assets/patternBG.png';
-import ArrowOdd from 'assets/arrowOdd.svg';
-import ArrowEven from 'assets/arrowEven.svg';
-
-const data = [
-    {
-        id: 1,
-        title: 'Set disbursement Instructions',
-        text:
-            'Get your blood tests delivered at home collect a sample from the your blood tests.',
-    },
-    {
-        id: 2,
-        title: 'Assembly retrieves funds from your account',
-        text:
-            'Get your blood tests delivered at home collect a sample from the your blood tests.',
-    },
-    {
-        id: 3,
-        title: 'Assembly initiates disbursement',
-        text:
-            'Get your blood tests delivered at home collect a sample from the your blood tests.',
-    },
-    {
-        id: 4,
-        title: 'Customer receives funds payment',
-        text:
-            'Get your blood tests delivered at home collect a sample from the your blood tests.',
-    },
-];
-
-export default function WorkFlow() {
-    return (
-        <section sx={styles.workflow}>
-            <Container>
-                <SectionHeader
-                    slogan='Lol'
-                    title='Kek'
-                />
-            </Container>
-        </section>
-    );
-}
-
-const styles = {
+export const styles = {
     workflow: {
         backgroundColor: 'primary',
         backgroundImage: `url(${PatternBG})`,

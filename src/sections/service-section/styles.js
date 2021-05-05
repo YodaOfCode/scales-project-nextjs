@@ -1,94 +1,6 @@
-import React, {useState} from 'react';
-/** @jsx jsx */
-import {jsx, Container, Box, Grid, Text, Heading, Button, Image} from 'theme-ui';
-import {keyframes} from '@emotion/core';
-import TextFeature from 'components/text-feature';
-import ModalVideo from 'react-modal-video';
-import {IoIosPlay} from 'react-icons/io';
+import {keyframes} from "@emotion/core";
 
-import ServiceThumb from 'assets/service-thumb.png';
-import shapePattern from 'assets/shape-pattern1.png';
-
-import Smart from 'assets/services/smart.svg';
-import Secure from 'assets/services/secure.svg';
-
-const data = {
-    subTitle: 'our services',
-    title: 'Business Goals Achieved with Design',
-    features: [
-        {
-            id: 1,
-            imgSrc: Smart,
-            altText: 'Smart Features',
-            title: 'Smart Features',
-            text:
-                'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
-        },
-        {
-            id: 2,
-            imgSrc: Secure,
-            altText: 'Secure Contents',
-            title: 'Secure Contents',
-            text:
-                'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
-        },
-    ],
-};
-
-export default function ServiceSection() {
-    const [videoOpen, setVideoOpen] = useState(false)
-
-    const handleClick = (e) => {
-        e.preventDefault()
-
-        setVideoOpen(true)
-    }
-
-    return (
-        <section sx={{variant: 'section.services'}}>
-            <Container sx={styles.containerBox}>
-                <Box sx={styles.thumbnail}>
-                    <Image src={ServiceThumb} alt='Thumbnail'/>
-                    <Button
-                        sx={styles.videoBtn}
-                        onClick={handleClick}
-                        aria-label='Play Button'
-                    >
-                        <span>
-                            <IoIosPlay/>
-                        </span>
-                    </Button>
-                    <Box sx={styles.shapeBox}>
-                        <Image src={shapePattern} alt='shape'/>
-                    </Box>
-                </Box>
-                <Box sx={styles.contentBox}>
-                    <TextFeature subTitle={data.subTitle} title={data.title}/>
-
-                    <Grid sx={styles.grid}>
-                        {data.features.map((feature, index) => (
-                            <Box sx={styles.card} key={feature.id}>
-                                <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon}/>
-                                <Box sx={styles.wrapper}>
-                                    <Heading sx={styles.wrapper.title}>{feature.title}</Heading>
-                                    <Text sx={styles.wrapper.subTitle}>{feature.text}</Text>
-                                </Box>
-                            </Box>
-                        ))}
-                    </Grid>
-                </Box>
-            </Container>
-            <ModalVideo
-                channel='youtube'
-                isOpen={videoOpen}
-                videoId='iGBERMGMIvc'
-                onClose={() => setVideoOpen(false)}
-            />
-        </section>
-    );
-}
-
-const playPluse = keyframes`
+export const playPluse = keyframes`
   from {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
     opacity: 1;
@@ -100,7 +12,7 @@ const playPluse = keyframes`
   }
 `;
 
-const styles = {
+export const styles = {
     coreFeature: {
         py: [0, null, null, 2, null, 7],
         position: 'relative',
