@@ -23,6 +23,7 @@ export default function Banner() {
                         spy={true}
                         smooth={true}
                         duration={500}
+                        offset={-50}
                     >
                         <Button variant='primary'>
                             Детальніше

@@ -33,8 +33,8 @@ export default function Package() {
         <section id='pricing' sx={{variant: 'section.pricing'}}>
             <Container>
                 <SectionHeader
-                    slogan='Pricing'
-                    title='Choose your pricing plan'
+                    slogan='Ціна та терміни прокату'
+                    title='Детально ознайомтесь з цінами та умовами прокату вагів'
                 />
 
                 <Flex sx={styles.buttonGroup}>
@@ -45,7 +45,7 @@ export default function Package() {
                             aria-label='Monthly'
                             onClick={() => handlePricingPlan('monthly')}
                         >
-                            Monthly Plan
+                            Фіксований термін
                         </button>
                         <button
                             className={state.active === 'annual' ? 'active' : ''}
@@ -53,7 +53,7 @@ export default function Package() {
                             aria-label='Annual'
                             onClick={() => handlePricingPlan('annual')}
                         >
-                            Annual Plan
+                            Безлімітний термін
                         </button>
                     </Box>
                 </Flex>

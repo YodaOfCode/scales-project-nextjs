@@ -12,7 +12,7 @@ export default function KeyFeature() {
         <section sx={{variant: 'section.keyFeature'}} id='feature'>
             <Container>
                 <SectionHeader
-                    slogan='Вам не треба нікуди їхати чи йти'
+                    slogan='Вам не треба нікуди їхати'
                     title='Ми доставимо ваги прямо до вашого дому абсолютно безкоштовно'
                 />
                 <Grid sx={styles.grid}>

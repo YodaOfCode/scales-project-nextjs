@@ -7,13 +7,13 @@ import FeatureCard from 'components/feature-card.js';
 import {data} from './data';
 import {styles} from './styles';
 
-export default function Feature() {
+export default function Products() {
     return (
-        <section sx={{variant: 'section.feature'}}>
+        <section sx={{variant: 'section.products'}} id='products'>
             <Container>
                 <SectionHeader
-                    slogan='Quality features'
-                    title='Amazing using features'
+                    slogan='Ваги в наявності'
+                    title='Ваги, які ми рекомендуємо для використання'
                 />
                 <Grid sx={styles.grid}>
                     {data.map((item, index) => (
@@ -24,7 +24,6 @@ export default function Feature() {
                             title={item.title}
                             text={item.text}
                         >
-
                         </FeatureCard>
                     ))}
                 </Grid>

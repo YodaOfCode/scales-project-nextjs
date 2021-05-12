@@ -21,12 +21,16 @@ export default function FeatureCard({
 const styles = {
   card: {
     display: 'flex',
-    alignItems: 'flex-start',
-    mb: -1,
+    flexDirection: 'column',
+    '@media screen and (max-width: 768px)': {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
   },
 
   img: {
-    width: ['70px', null, null, '80px', '90px', 'auto'],
+    width: '60%',
     height: 'auto',
     flexShrink: 0,
     mr: [2, 3, null, null, 4, 5],
@@ -44,7 +48,6 @@ const styles = {
       fontWeight: 700,
       mb: ['10px', null, '15px'],
     },
-
     subTitle: {
       fontSize: [1, '15px'],
       fontWeight: 400,

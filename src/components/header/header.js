@@ -1,17 +1,19 @@
 /** @jsx jsx */
-import {jsx, Container, Flex, Button} from 'theme-ui';
+import {jsx, Container, Flex, Button, Box, IconButton} from 'theme-ui';
 import {keyframes} from '@emotion/core';
 import {Link} from 'react-scroll';
 import Logo from 'components/logo';
-import LogoDark from 'assets/logo.svg';
+import LogoMain from 'assets/logo.svg';
 import MobileDrawer from './mobile-drawer';
 import {menuItems} from './header.data';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faInstagram, faTelegram, faViber} from "@fortawesome/free-brands-svg-icons";
 
 export default function Header({className}) {
     return (
         <header sx={styles.header} className={className} id='header'>
             <Container sx={styles.container}>
-                <Logo src={LogoDark}/>
+                <Logo sx={styles.logo} src={LogoMain}/>
                 <Flex as='nav' sx={styles.nav}>
                     {menuItems.map((menuItem, index) => (
                         <Link
@@ -21,15 +23,45 @@ export default function Header({className}) {
                             smooth={true}
                             duration={500}
                             key={index}
+                            offset={menuItem.path === 'products' || menuItem.path === 'testimonial'
+                                ? -150
+                                : -50
+                            }
                         >
                             {menuItem.label}
                         </Link>
                     ))}
                 </Flex>
-                <Button className='donate__btn' variant='secondary' aria-label='Взяти в оренду'>
-                    Зарезервувати
-                </Button>
 
+                <Flex sx={{flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                    <a href="tel:+380935386595">
+                        <Button variant='primary' sx={styles.button}>
+                            <Box>
+                                <small sx={styles.contacts__info}>Контакти:</small>
+                            </Box>
+                            <Box>
+                                <span sx={styles.contacts__info}>+380935386595</span>
+                            </Box>
+                        </Button>
+                    </a>
+                    <Flex sx={{marginTop: '5px', alignItems: 'center'}}>
+                        <Box>
+                            <a target='_blank' href='https://t.me/MaksymZharchenko'>
+                                <FontAwesomeIcon sx={{margin: '0 2px', color: '#0088cc'}} icon={faTelegram} size='2x'/>
+                            </a>
+                        </Box>
+                        <Box>
+                            <a target='_blank' href="viber://chat?number=%2B380935386595">
+                                <FontAwesomeIcon sx={{margin: '0 2px', color: '#665CAC'}} icon={faInstagram} size='2x'/>
+                            </a>
+                        </Box>
+                        <Box>
+                            <a target='_blank' href="viber://chat?number=%2B380935386595">
+                                <FontAwesomeIcon sx={{margin: '0 2px', color: '#3f729b'}} icon={faViber} size='2x'/>
+                            </a>
+                        </Box>
+                    </Flex>
+                </Flex>
                 <MobileDrawer/>
             </Container>
         </header>
@@ -75,6 +107,25 @@ const styles = {
             'nev > a': {
                 color: 'text',
             },
+        },
+    },
+    button: {
+
+        '@media screen and (max-width: 520px)': {
+            minWidth: '100px',
+            padding: '5px',
+        },
+
+    },
+    contacts__info: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize: '12px',
+        color: 'white',
+        textDecoration: 'none',
+        '@media screen and (max-width: 520px)': {
+            fontSize: '10px',
         },
     },
     container: {

@@ -1,3 +1,4 @@
+import React from "react";
 import {keyframes} from "@emotion/core";
 import ButtonGroup from "../../components/button-group";
 
@@ -21,8 +22,8 @@ export const responsive = {
 };
 
 export const sliderParams = {
-    additionalTransfrom: 0,
-    arrows: false,
+    additionalTransform: 0,
+    arrows: true,
     autoPlaySpeed: 3000,
     centerMode: false,
     className: '',
@@ -66,7 +67,6 @@ export const styles = {
         mt: '-40px',
         mx: -3,
         display: 'flex',
-        flexDirection: 'column',
         flexWrap: 'wrap',
         '&.pricing__wrapper .package__card': {
             '.package__header': {

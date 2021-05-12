@@ -55,6 +55,12 @@ export const styles = {
                 height: [245, 'auto'],
                 borderRadius: '25px',
             },
+            '@media screen and (max-width: 520px)': {
+                display: 'block',
+                margin: '0 auto',
+                minWidth: '225px',
+                maxHeight: '125px',
+            },
         },
     },
 };

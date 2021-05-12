@@ -360,7 +360,7 @@ export default {
       fontFamily: 'body',
       lineHeight: 'body',
       fontWeight: 'body',
-      fontSmoothing: 'antialiased',
+      fontSmoothing: 'antialias',
       // Modal Global Style
       '.modal-video-close-btn': {
         cursor: 'pointer',

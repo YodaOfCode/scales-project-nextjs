@@ -1,26 +1,29 @@
 export const data = [
     {
         id: 1,
-        title: 'Set disbursement Instructions',
+        title: 'Ознайомтесь з информацією на сайті',
         text:
-            'Get your blood tests delivered at home collect a sample from the your blood tests.',
+            'Детально ознайомтесь з цінами, товаром та загальною політикою прокату вагів.',
     },
     {
         id: 2,
-        title: 'Assembly retrieves funds from your account',
+        title: "Зв'яжіться з нами",
         text:
-            'Get your blood tests delivered at home collect a sample from the your blood tests.',
+            "У верхній частині сайту, ви можете знайти номер телефону, а також наші соціальні мережі для зв'язку " +
+            'та урегулювання будь-яких питань стосовно прокату вагів.',
     },
     {
         id: 3,
-        title: 'Assembly initiates disbursement',
+        title: 'Отримайте ваги',
         text:
-            'Get your blood tests delivered at home collect a sample from the your blood tests.',
+            'Після урегулювання усіх питань, ми, в найкоротший термін та в комфортний для вас час, ' +
+            'доставимо ваги прямо до вашого дому  абсолютно безкоштовно.'
     },
     {
         id: 4,
-        title: 'Customer receives funds payment',
+        title: 'Поверніть ваги',
         text:
-            'Get your blood tests delivered at home collect a sample from the your blood tests.',
+            "Після того, як ви скористуєтесь вагами, зв'яжіться з нами, ми приїдемо, " +
+            "розрахуємось за користування, повернемо авансовий платіж і заберемо ваги."
     },
 ];

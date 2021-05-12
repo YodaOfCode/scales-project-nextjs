@@ -8,8 +8,12 @@ export const menuItems = [
     label: 'Переваги',
   },
   {
+    path: 'products',
+    label: 'Ваги',
+  },
+  {
     path: 'pricing',
-    label: 'Ціна та терміни',
+    label: 'Ціна',
   },
   {
     path: 'testimonial',

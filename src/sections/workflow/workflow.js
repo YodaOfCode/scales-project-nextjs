@@ -11,7 +11,7 @@ export default function WorkFlow() {
         <section sx={styles.workflow}>
             <Container>
                 <SectionHeader
-                    slogan='Як це працює?'
+                    slogan='Як працює прокат вагів?'
                     title='Вам потрібно зробити всього 4 кроки'
                     isWhite={true}
                 />

@@ -30,12 +30,14 @@ export default function PriceCard({
                     <List items={points} childStyle={styles.listItem}/>
                     <Text className='package__price' sx={styles.price}>
                         {priceWithUnit}
-                        <span>Monthly</span>
+                        <span>/ Тиждень</span>
                     </Text>
                     <Box sx={styles.buttonGroup}>
-                        <Button variant='primary' aria-label={buttonText}>
-                            {buttonText}
-                        </Button>
+                        <a href="tel:+380935386595">
+                            <Button variant='primary' aria-label={buttonText}>
+                                {buttonText}
+                            </Button>
+                        </a>
                         {anotherOption && (
                             <Button
                                 variant='textButton'

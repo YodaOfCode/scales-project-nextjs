@@ -8,7 +8,7 @@ import shapePattern from 'assets/shape-pattern2.png';
 import {data} from './data';
 import {styles} from './styles';
 
-export default function CoreFeature() {
+export default function Reminder() {
     return (
         <section sx={{variant: 'section.coreFeature'}}>
             <Container sx={styles.containerBox}>
