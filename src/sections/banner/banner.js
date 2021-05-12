@@ -12,7 +12,7 @@ export default function Banner() {
             <Container sx={styles.banner.container}>
                 <Box sx={styles.banner.contentBox}>
                     <Heading as='h1' variant='heroPrimary'>
-                        Прокат дитячих вагів
+                        Прокат дитячих вагів у Черкасах
                     </Heading>
                     <Text as='p' variant='heroSecondary'>
                         На нашому сайті, ви можете знайти та взяти напрокат чудові дитячі ваги на будь-який термін

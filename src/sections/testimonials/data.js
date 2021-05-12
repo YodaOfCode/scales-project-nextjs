@@ -9,43 +9,39 @@ import ButtonGroup from "../../components/button-group";
 export const data = [
     {
         id: 1,
-        title: 'Modern look & trending design',
+        title: 'Отличный сервис, больше таких в Черкассах не встречал',
         description:
-            'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-        avatar: Avatar1,
-        name: 'Denny Hilguston',
-        designation: '@denny.hil',
-        review: 4,
+            'Брал напрокат весы для ребенка на этом сайте. Связался с менеджером, все обсудили и через час весы уже были под моим подъездом. Рекомендую.',
+        avatar: Avatar2,
+        name: 'Александр Способ',
+        review: 5,
     },
     {
         id: 2,
-        title: 'Design Quality & performance',
+        title: 'Бесплатная доставка - это всегда плюс',
         description:
-            'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-        avatar: Avatar2,
-        name: 'Denny Hilguston',
-        designation: '@denny.hil',
+            '4 месяца назад взяла в аренду весы и теперь пора возвращать. Совершенно не нужно было никуда ехать. Сервис отличный и главное с бесплатной доставкой.',
+        avatar: Avatar1,
+        name: 'Татьяна Нечепурная',
         review: 5,
     },
     {
         id: 3,
-        title: 'Layout and organized layers',
+        title: 'Непогано заощадив',
         description:
-            'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+            'Все чудово, брав ваги на деякий час для дитини. Навіть не знав, що існують такі сервіси. Тепер частіше буду користуватись послугами прокату.',
         avatar: Avatar3,
-        name: 'Denny Hilguston',
-        designation: '@denny.hil',
+        name: 'Екатерина Сухарева',
         review: 5,
     },
     {
         id: 4,
-        title: 'Modern look & trending design',
+        title: 'Дешево і швидко',
         description:
-            'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+            'Нічого погано сказати про сервіс BabyHealth не можу, ціна на прокат вагів чудова, доставили швидко, ваги працюють без зауважень.',
         avatar: Avatar4,
-        name: 'Denny Hilguston',
-        designation: '@denny.hil',
-        review: 4,
+        name: 'Олексій Струнін',
+        review: 5,
     },
 ];
 

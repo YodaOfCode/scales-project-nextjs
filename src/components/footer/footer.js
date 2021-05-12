@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import {jsx, Box, Container, Image, Text} from 'theme-ui';
-import {Link} from 'components/link';
+import {Link as LogoLink} from 'components/link';
+import {Link} from 'react-scroll';
 import data from './footer.data';
 import FooterLogo from 'assets/logo.svg';
 
@@ -9,18 +10,23 @@ export default function Footer() {
         <footer sx={styles.footer}>
             <Container>
                 <Box sx={styles.footer.footerBottomArea}>
-                    <Link path='/'>
+                    <LogoLink path='/'>
                         <Image src={FooterLogo} alt='Logo'/>
-                    </Link>
+                    </LogoLink>
                     <Box sx={styles.footer.menus}>
                         <nav>
-                            {data.menuItems.map((item, index) => (
-                                <Link
-                                    path={item.path}
-                                    key={index}
-                                    label={item.label}
-                                    sx={styles.footer.link}
-                                />
+                            {data.menuItems.map((menuItem, index) => (
+                                <Link key={index}
+                                      label={menuItem.label}
+                                      sx={styles.footer.link}
+                                      activeClass='active'
+                                      spy={true}
+                                      smooth={true}
+                                      duration={500}
+                                      to={menuItem.path}
+                                >
+                                    {menuItem.label}
+                                </Link>
                             ))}
                         </nav>
                     </Box>

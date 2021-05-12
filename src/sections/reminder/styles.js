@@ -25,7 +25,8 @@ export const styles = {
         '> img': {
             position: 'relative',
             zIndex: 1,
-            height: [310, 'auto'],
+            height: ['auto', 'auto'],
+            borderRadius: '15px',
         },
     },
     shapeBox: {

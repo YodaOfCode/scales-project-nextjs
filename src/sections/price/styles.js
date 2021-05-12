@@ -6,12 +6,12 @@ import ButtonGroup from "../../components/button-group";
 export const responsive = {
     desktop: {
         breakpoint: {max: 3000, min: 1024},
-        items: 3,
+        items: 1,
         draggable: false,
     },
     tablet: {
         breakpoint: {max: 1023, min: 640},
-        items: 2,
+        items: 1,
         draggable: true,
     },
     mobile: {
@@ -23,12 +23,12 @@ export const responsive = {
 
 export const sliderParams = {
     additionalTransform: 0,
-    arrows: true,
+    arrows: false,
     autoPlaySpeed: 3000,
     centerMode: false,
     className: '',
     slidesToSlide: 1,
-    items: 3,
+    items: 1,
     containerClass: 'carousel-container',
     customButtonGroup: <ButtonGroup/>,
     dotListClass: '',
@@ -37,7 +37,7 @@ export const sliderParams = {
     keyBoardControl: false,
     itemClass: '',
     minimumTouchDrag: 80,
-    renderButtonGroupOutside: true,
+    renderButtonGroupOutside: false,
     renderDotsOutside: false,
     responsive: responsive,
     showDots: false,
@@ -83,6 +83,8 @@ export const styles = {
             },
         },
         '.carousel-container': {
+            display: 'flex',
+            justifyContent: 'center',
             width: '100%',
             '> ul > li ': {
                 display: 'flex',
@@ -96,6 +98,8 @@ export const styles = {
     pricingItem: {
         mx: 3,
         display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         flexShrink: 0,
         flex: '1 1 auto',
     },

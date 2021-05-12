@@ -10,7 +10,7 @@ import ServiceSection from '../sections/service-section/service-section';
 import Products from '../sections/products/products';
 import Reminder from '../sections/reminder/reminder';
 import WorkFlow from '../sections/workflow/workflow';
-import Package from '../sections/packages/package';
+import Price from '../sections/price/price';
 import TeamSection from '../sections/team-section/team-section';
 import TestimonialCard from '../sections/testimonials/testimonial';
 
@@ -18,15 +18,15 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="NextJS Landing Page" />
+          <SEO title="Прокат вагів у Черкасах" />
           <Banner />
           <KeyFeature />
           <ServiceSection />
           <Products />
           <Reminder />
           <WorkFlow />
-          <Package />
-          <TeamSection />
+          <Price />
+          {/*<TeamSection />*/}
           <TestimonialCard />
         </Layout>
     </ThemeProvider>

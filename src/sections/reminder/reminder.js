@@ -2,7 +2,7 @@
 import {jsx, Container, Box, Image} from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import FeatureThumb from 'assets/core-feature.png';
+import RemindThumb from 'assets/reminder.jpg';
 import shapePattern from 'assets/shape-pattern2.png';
 
 import {data} from './data';
@@ -22,7 +22,7 @@ export default function Reminder() {
                     />
                 </Box>
                 <Box sx={styles.thumbnail}>
-                    <Image src={FeatureThumb} alt='Thumbnail'/>
+                    <Image src={RemindThumb} alt='Thumbnail'/>
                     <Box sx={styles.shapeBox}>
                         <Image src={shapePattern} alt='Shape'/>
                     </Box>

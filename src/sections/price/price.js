@@ -8,11 +8,11 @@ import SectionHeader from 'components/section-header';
 import {packages} from "./data";
 import {styles, sliderParams} from "./styles";
 
-export default function Package() {
-    const {monthly, annual} = packages;
+export default function Price() {
+    const {daily, annual} = packages;
     const [state, setState] = useState({
-        active: 'monthly',
-        pricingPlan: monthly,
+        active: 'daily',
+        pricingPlan: daily,
     })
 
     const handlePricingPlan = (plan) => {
@@ -23,8 +23,8 @@ export default function Package() {
             })
         } else {
             setState({
-                active: 'monthly',
-                pricingPlan: monthly,
+                active: 'daily',
+                pricingPlan: daily,
             })
         }
     }
@@ -38,24 +38,24 @@ export default function Package() {
                 />
 
                 <Flex sx={styles.buttonGroup}>
-                    <Box sx={styles.buttonGroupInner}>
-                        <button
-                            className={state.active === 'monthly' ? 'active' : ''}
-                            type='button'
-                            aria-label='Monthly'
-                            onClick={() => handlePricingPlan('monthly')}
-                        >
-                            Фіксований термін
-                        </button>
-                        <button
-                            className={state.active === 'annual' ? 'active' : ''}
-                            type='button'
-                            aria-label='Annual'
-                            onClick={() => handlePricingPlan('annual')}
-                        >
-                            Безлімітний термін
-                        </button>
-                    </Box>
+                    {/*<Box sx={styles.buttonGroupInner}>*/}
+                    {/*    <button*/}
+                    {/*        className={state.active === 'daily' ? 'active' : ''}*/}
+                    {/*        type='button'*/}
+                    {/*        aria-label='daily'*/}
+                    {/*        onClick={() => handlePricingPlan('daily')}*/}
+                    {/*    >*/}
+                    {/*        Будь-який термін*/}
+                    {/*    </button>*/}
+                        {/*<button*/}
+                        {/*    className={state.active === 'annual' ? 'active' : ''}*/}
+                        {/*    type='button'*/}
+                        {/*    aria-label='Annual'*/}
+                        {/*    onClick={() => handlePricingPlan('annual')}*/}
+                        {/*>*/}
+                        {/*    Безлімітний термін*/}
+                        {/*</button>*/}
+                    {/*</Box>*/}
                 </Flex>
                 <Box sx={styles.pricingWrapper} className='pricing__wrapper'>
                     <Carousel {...sliderParams}>

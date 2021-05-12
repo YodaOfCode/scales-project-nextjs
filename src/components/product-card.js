@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Image, Box, Heading, Text } from 'theme-ui';
 
-export default function FeatureCard({
+export default function ProductCard({
   src,
   altText = 'default alt text',
   title,

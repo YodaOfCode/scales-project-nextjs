@@ -1,24 +1,24 @@
 export default {
   menuItems: [
     {
-      path: '/',
-      label: 'Home',
+      path: 'home',
+      label: 'Головна',
     },
     {
-      path: '/',
-      label: 'Adversite',
+      path: 'feature',
+      label: 'Переваги',
     },
     {
-      path: '/',
-      label: 'Supports',
+      path: 'products',
+      label: 'Ваги',
     },
     {
-      path: '/',
-      label: 'Marketing',
+      path: 'pricing',
+      label: 'Ціна',
     },
     {
-      path: '/',
-      label: 'Contact',
+      path: 'testimonial',
+      label: 'Відгуки',
     },
   ],
 };

@@ -30,7 +30,7 @@ export default function PriceCard({
                     <List items={points} childStyle={styles.listItem}/>
                     <Text className='package__price' sx={styles.price}>
                         {priceWithUnit}
-                        <span>/ Тиждень</span>
+                        <span>/ Місяць</span>
                     </Text>
                     <Box sx={styles.buttonGroup}>
                         <a href="tel:+380935386595">
@@ -57,6 +57,9 @@ export default function PriceCard({
 
 const styles = {
     pricingBox: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         borderRadius: 20,
         position: 'relative',
         transition: 'all 0.3s',
