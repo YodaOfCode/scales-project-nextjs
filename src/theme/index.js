@@ -95,11 +95,12 @@ export default {
       pb: [8, null, 9, null, null, 10, null, '170px'],
     },
     coreFeature: {
+      pt: 1,
       pb: [8, null, 9, null, null, 10, null, '170px'],
       overflow: 'hidden',
     },
     testimonial: {
-      pt: [8, null, 8, '70px', null, 8, null, '145px'],
+      pt: [0, null, 9, null, null, 10, null, '180px'],
       pb: ['90px', null, 9, null, null, 10, null, '190px'],
       overflow: 'hidden',
     },

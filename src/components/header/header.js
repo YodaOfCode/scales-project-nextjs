@@ -23,7 +23,7 @@ export default function Header({className}) {
                             smooth={true}
                             duration={500}
                             key={index}
-                            offset={menuItem.path === 'products' || menuItem.path === 'testimonial'
+                            offset={menuItem.path === 'products'
                                 ? -150
                                 : -50
                             }

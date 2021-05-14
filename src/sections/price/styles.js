@@ -65,7 +65,6 @@ export const styles = {
     pricingWrapper: {
         mb: '-40px',
         mt: '-40px',
-        mx: -3,
         display: 'flex',
         flexWrap: 'wrap',
         '&.pricing__wrapper .package__card': {

@@ -12,8 +12,8 @@ export default function TestimonialCard() {
         <section id='testimonial' sx={{variant: 'section.testimonial'}}>
             <Container css={{textAlign: 'center'}}>
                 <SectionHeader
-                    slogan='Testimonial'
-                    title='Meet Client Satisfaction'
+                    slogan='Відгуки про нашу діяльність'
+                    title='Ми хочемо, щоб всі наші клієнти були максимально задоволені'
                 />
             </Container>
             <Box sx={styles.carouselWrapper}>

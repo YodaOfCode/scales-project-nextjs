@@ -2,7 +2,7 @@
 import {jsx, Container, Box, Image} from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import RemindThumb from 'assets/reminder.jpg';
+import RemindThumb from 'assets/reminder.png';
 import shapePattern from 'assets/shape-pattern2.png';
 
 import {data} from './data';
