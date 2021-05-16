@@ -11,7 +11,6 @@ import Products from '../sections/products/products';
 import Reminder from '../sections/reminder/reminder';
 import WorkFlow from '../sections/workflow/workflow';
 import Price from '../sections/price/price';
-import TeamSection from '../sections/team-section/team-section';
 import TestimonialCard from '../sections/testimonials/testimonial';
 
 export default function IndexPage() {
@@ -26,7 +25,6 @@ export default function IndexPage() {
           <Reminder />
           <WorkFlow />
           <Price />
-          {/*<TeamSection />*/}
           <TestimonialCard />
         </Layout>
     </ThemeProvider>
