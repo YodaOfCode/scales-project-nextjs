@@ -26,8 +26,6 @@ export default function IndexPage() {
           <Reminder />
           <WorkFlow />
           <Price />
-          {/*<TeamSection />*/}
-          <TestimonialCard />
         </Layout>
     </ThemeProvider>
   );
