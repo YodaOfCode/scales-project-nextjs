@@ -230,6 +230,10 @@ export default {
     },
     logo: {
       display: 'flex',
+      '@media screen and (max-width: 620px)': {
+        width: '120px',
+        height: '120px',
+      }
     },
   },
   images: {

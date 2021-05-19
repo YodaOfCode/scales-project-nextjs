@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import {Box, Card, Text, Heading, Button} from 'theme-ui';
+import {jsx, Box, Card, Text, Heading, Button} from 'theme-ui';
 import React from 'react';
 import List from './list';
 
