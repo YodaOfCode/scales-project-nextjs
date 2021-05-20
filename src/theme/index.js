@@ -228,10 +228,8 @@ export default {
             textDecoration: 'none',
         },
         logo: {
-            display: 'block',
-            '@media screen and (max-width: 620px)': {
-                margin: '0 auto',
-                maxHeight: '25px',
+            '@media screen and (max-width: 768px)': {
+                height: '100px',
             }
         },
     },
