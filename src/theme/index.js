@@ -229,8 +229,7 @@ export default {
     },
     logo: {
       '@media screen and (max-width: 620px)': {
-        width: '170px',
-        height: '125px',
+        width: '100px',
       }
     },
   },
