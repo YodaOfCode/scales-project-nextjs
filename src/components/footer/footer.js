@@ -10,7 +10,7 @@ export default function Footer() {
         <footer sx={styles.footer}>
             <Container>
                 <Box sx={styles.footer.footerBottomArea}>
-                    <LogoLink path='/'>
+                    <LogoLink path='/' sx={styles.footer.logo}>
                         <Image src={FooterLogo} alt='Logo'/>
                     </LogoLink>
                     <Box sx={styles.footer.menus}>
@@ -39,14 +39,25 @@ export default function Footer() {
 
 const styles = {
     footer: {
+        logo: {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            '@media screen and (max-width: 620px)': {
+                width: '150px',
+                height: '130px',
+            }
+        },
         footerBottomArea: {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
             borderTop: '1px solid',
             borderTopColor: 'border_color',
-            display: 'flex',
             pt: [7, null, 8],
             pb: ['40px', null, '100px'],
             textAlign: 'center',
-            flexDirection: 'column',
         },
         menus: {
             mt: [3, 4],
