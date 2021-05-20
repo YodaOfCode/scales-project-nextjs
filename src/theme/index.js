@@ -229,11 +229,6 @@ export default {
     },
     logo: {
       display: 'flex',
-      '@media screen and (max-width: 620px)': {
-        height: '100px',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }
     },
   },
   images: {

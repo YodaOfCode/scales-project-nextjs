@@ -10,8 +10,8 @@ export default function Logo({src, ...rest}) {
                 variant: 'links.logo',
                 display: 'flex',
                 justifyContent: 'center',
+                alignItems: 'center',
                 cursor: 'pointer',
-                mr: 15,
             }}
             {...rest}
         >

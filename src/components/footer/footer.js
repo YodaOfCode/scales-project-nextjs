@@ -47,9 +47,6 @@ const styles = {
             pt: [7, null, 8],
             pb: ['40px', null, '100px'],
             textAlign: 'center',
-            logo: {
-                display: 'flex',
-            },
         },
         menus: {
             mt: [3, 4],
