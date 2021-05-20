@@ -227,14 +227,12 @@ export default {
       color: 'inherit',
       textDecoration: 'none',
     },
-    logo: {display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
+    logo: {
+      display: 'flex',
+      textAlign: 'center',
       '@media screen and (max-width: 620px)': {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100px',
+        textAlign: 'center',
+        width: '120px',
       }
     },
   },
