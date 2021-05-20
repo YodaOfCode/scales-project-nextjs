@@ -228,12 +228,10 @@ export default {
       textDecoration: 'none',
     },
     logo: {
-      display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       '@media screen and (max-width: 620px)': {
-        height: '75px',
-        display: 'flex',
+        height: '100px',
         alignItems: 'center',
         justifyContent: 'center',
       }
