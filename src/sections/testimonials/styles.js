@@ -52,9 +52,6 @@ export const styles = {
             '28px 15px 30px 15px',
             '30px 20px 40px',
         ],
-        '&:hover': {
-            boxShadow: '0px 6px 30px rgba(38, 78, 118, 0.1)',
-        },
         '.rating': {
             mb: [1, null, null, 2],
             ul: {
