@@ -52,6 +52,9 @@ const styles = {
                 justifyContent: 'center',
                 alignItems: 'center',
                 '@media screen and (max-width: 620px)': {
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
                     width: '100px',
                 }
             },
