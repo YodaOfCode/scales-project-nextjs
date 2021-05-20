@@ -45,8 +45,8 @@ const styles = {
             alignItems: 'center',
             '@media screen and (max-width: 620px)': {
                 display: 'block',
-                width: '140px',
-                height: '100px',
+                width: '160px',
+                height: 'auto',
             }
         },
         footerBottomArea: {
