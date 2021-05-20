@@ -1,18 +1,16 @@
 /** @jsx jsx */
 import {jsx, Box, Container, Image, Text} from 'theme-ui';
-import {Link as LogoLink} from 'components/link';
 import {Link} from 'react-scroll';
 import data from './footer.data';
-import FooterLogo from 'assets/logo.svg';
+import Logo from 'components/logo';
+import LogoMain from 'assets/logo.svg'
 
 export default function Footer() {
     return (
         <footer sx={styles.footer}>
             <Container>
                 <Box sx={styles.footer.footerBottomArea}>
-                    <LogoLink path='/' sx={styles.footer.logo}>
-                        <Image src={FooterLogo} alt='Logo'/>
-                    </LogoLink>
+                    <Logo path='/' sx={styles.footer.footerBottomArea.logo} src={LogoMain} alt='Logo'/>
                     <Box sx={styles.footer.menus}>
                         <nav>
                             {data.menuItems.map((menuItem, index) => (
@@ -39,15 +37,6 @@ export default function Footer() {
 
 const styles = {
     footer: {
-        logo: {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            '@media screen and (max-width: 620px)': {
-                width: '100%',
-                height: '150px',
-            }
-        },
         footerBottomArea: {
             display: 'flex',
             justifyContent: 'center',
@@ -58,6 +47,15 @@ const styles = {
             pt: [7, null, 8],
             pb: ['40px', null, '100px'],
             textAlign: 'center',
+            logo: {
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                '@media screen and (max-width: 620px)': {
+                    width: '100%',
+                    height: '200px',
+                }
+            },
         },
         menus: {
             mt: [3, 4],
