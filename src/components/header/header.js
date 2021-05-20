@@ -110,7 +110,6 @@ const styles = {
         },
     },
     button: {
-
         '@media screen and (max-width: 520px)': {
             minWidth: '100px',
             padding: '5px',
