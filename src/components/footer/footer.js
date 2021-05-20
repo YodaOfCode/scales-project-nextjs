@@ -49,8 +49,6 @@ const styles = {
             textAlign: 'center',
             logo: {
                 display: 'flex',
-                '@media screen and (max-width: 620px)': {
-                }
             },
         },
         menus: {
