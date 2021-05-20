@@ -223,16 +223,14 @@ export default {
       },
     },
     footer: {
-      display: 'block',
       px: 0,
       color: 'inherit',
       textDecoration: 'none',
     },
     logo: {
       '@media screen and (max-width: 620px)': {
-        display: 'block',
-        width: '160px',
-        height: 'auto',
+        width: '170px',
+        height: '125px',
       }
     },
   },
