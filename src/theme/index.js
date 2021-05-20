@@ -229,10 +229,10 @@ export default {
       textDecoration: 'none',
     },
     logo: {
-      display: 'flex',
+      display: 'block',
       '@media screen and (max-width: 620px)': {
-        width: '150px',
-        height: '130px',
+        width: '120px',
+        height: 'auto',
       }
     },
   },
