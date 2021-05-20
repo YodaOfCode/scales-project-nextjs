@@ -37,7 +37,7 @@ export default function Price() {
                     title='Детально ознайомтесь з цінами та умовами прокату вагів'
                 />
 
-                <Flex sx={styles.buttonGroup}>
+                {/*<Flex sx={styles.buttonGroup}>*/}
                     {/*<Box sx={styles.buttonGroupInner}>*/}
                     {/*    <button*/}
                     {/*        className={state.active === 'daily' ? 'active' : ''}*/}
@@ -56,9 +56,9 @@ export default function Price() {
                         {/*    Безлімітний термін*/}
                         {/*</button>*/}
                     {/*</Box>*/}
-                </Flex>
+                {/*</Flex>*/}
                 <Box sx={styles.pricingWrapper} className='pricing__wrapper'>
-                    <Carousel {...sliderParams}>
+                    {/*<Carousel {...sliderParams}>*/}
                         {state.pricingPlan.map((packageData, index) => (
                             <Box sx={styles.pricingItem} key={packageData.id}>
                                 <PriceCard
@@ -66,7 +66,7 @@ export default function Price() {
                                 />
                             </Box>
                         ))}
-                    </Carousel>
+                    {/*</Carousel>*/}
                 </Box>
             </Container>
         </section>
