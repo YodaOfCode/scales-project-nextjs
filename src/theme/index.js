@@ -231,8 +231,8 @@ export default {
     logo: {
       display: 'block',
       '@media screen and (max-width: 620px)': {
-        width: '120px',
-        height: 'auto',
+        width: '140px',
+        height: '100px',
       }
     },
   },
