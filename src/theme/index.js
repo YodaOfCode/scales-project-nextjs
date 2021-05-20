@@ -229,10 +229,10 @@ export default {
     },
     logo: {
       display: 'flex',
-      textAlign: 'center',
       '@media screen and (max-width: 620px)': {
-        textAlign: 'center',
-        width: '120px',
+        display: 'block',
+        margin: '0 auto',
+        width: '100px',
       }
     },
   },

@@ -48,10 +48,11 @@ const styles = {
             pb: ['40px', null, '100px'],
             textAlign: 'center',
             logo: {
-                textAlign: 'center',
+                display: 'block',
+                margin: '0 auto',
                 '@media screen and (max-width: 620px)': {
                     textAlign: 'center',
-                    width: '120px',
+                    width: '100px',
                 }
             },
         },
