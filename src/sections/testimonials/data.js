@@ -82,7 +82,7 @@ export const carouselParams = {
     infinite: true,
     itemClass: "",
     keyBoardControl: true,
-    minimumTouchDrag: 0,
+    minimumTouchDrag: 1,
     renderButtonGroupOutside: true,
     renderDotsOutside: false,
     responsive: responsive,
