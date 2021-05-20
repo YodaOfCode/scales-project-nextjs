@@ -44,8 +44,9 @@ const styles = {
             justifyContent: 'center',
             alignItems: 'center',
             '@media screen and (max-width: 620px)': {
-                width: '170px',
-                height: '125px',
+                display: 'block',
+                width: '300px',
+                height: '150px',
             }
         },
         footerBottomArea: {
