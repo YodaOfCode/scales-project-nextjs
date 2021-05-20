@@ -228,8 +228,7 @@ export default {
       textDecoration: 'none',
     },
     logo: {
-      alignItems: 'center',
-      justifyContent: 'center',
+      display: 'flex',
       '@media screen and (max-width: 620px)': {
         height: '100px',
         alignItems: 'center',
