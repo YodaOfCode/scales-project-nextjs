@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import {jsx} from 'theme-ui';
 import {Container, Grid} from 'theme-ui';
-import SectionHeader from 'components/section-header';
-import ProductCard from 'components/product-card.js';
+import SectionHeader from 'components/section-header/section-header';
+import ProductCard from 'components/product-card/product-card.js';
 
 import {data} from './data';
 import {styles} from './styles';
@@ -16,7 +16,7 @@ export default function Products() {
                     title='Ваги, які ми рекомендуємо для використання'
                 />
                 <Grid sx={styles.grid}>
-                    {data.map((item, index) => (
+                    {data.map((item) => (
                         <ProductCard
                             key={item.id}
                             src={item.imgSrc}

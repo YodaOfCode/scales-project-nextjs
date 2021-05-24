@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import {jsx, Container, Box, Image} from 'theme-ui';
-import TextFeature from 'components/text-feature';
+import TextFeature from 'components/text-feature/text-feature';
 
 import RemindThumb from 'assets/reminder.png';
 import shapePattern from 'assets/shape-pattern2.png';

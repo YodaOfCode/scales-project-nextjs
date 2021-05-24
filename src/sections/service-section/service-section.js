@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import {jsx, Container, Box, Grid, Text, Heading, Button, Image} from 'theme-ui';
 
-import TextFeature from 'components/text-feature';
+import TextFeature from 'components/text-feature/text-feature';
 import ModalVideo from 'react-modal-video';
 import {IoIosPlay} from 'react-icons/io';
 
@@ -44,7 +44,7 @@ export default function ServiceSection() {
                     <TextFeature subTitle={data.subTitle} title={data.title}/>
 
                     <Grid sx={styles.grid}>
-                        {data.features.map((feature, index) => (
+                        {data.features.map((feature) => (
                             <Box sx={styles.card} key={feature.id}>
                                 <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon}/>
                                 <Box sx={styles.wrapper}>
