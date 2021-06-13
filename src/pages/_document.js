@@ -1,10 +1,6 @@
 import React from "react";
 import Document, {Html, Head, Main, NextScript} from 'next/document';
 
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-CNNMFBRGZ2');
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 class CustomDocument extends Document {
     static async getInitialProps(ctx) {
         const initialProps = await Document.getInitialProps(ctx);
@@ -14,7 +10,16 @@ class CustomDocument extends Document {
     render() {
         return (
             <Html lang="uk-UK">
-                <Head/>
+                <Head>
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNNMFBRGZ2"/>
+                    <script>
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments)}
+                        gtag('js', new Date());
+
+                        gtag('config', 'G-CNNMFBRGZ2');
+                    </script>
+                </Head>
                 <body>
                 <Main/>
                 <NextScript/>
