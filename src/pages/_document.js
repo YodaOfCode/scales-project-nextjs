@@ -10,7 +10,10 @@ class CustomDocument extends Document {
     render() {
         return (
             <Html lang="uk-UK">
-                <Head/>
+                <Head>
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNNMFBRGZ2"/>
+                    <script src="/ga.js" async/>
+                </Head>
                 <body>
                 <Main/>
                 <NextScript/>
