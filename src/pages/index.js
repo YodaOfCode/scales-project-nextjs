@@ -2,8 +2,8 @@ import React from 'react';
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 
-import SEO from 'components/seo';
-import Layout from 'components/layout';
+import SEO from 'components/seo/seo';
+import Layout from 'components/layout/layout';
 import Banner from '../sections/banner/banner';
 import KeyFeature from '../sections/key-feature/key-feature';
 import ServiceSection from '../sections/service-section/service-section';

@@ -1,9 +1,8 @@
 import React from "react";
 import Avatar1 from "../../assets/testimonial/avatar1.png";
 import Avatar2 from "../../assets/testimonial/avatar2.png";
-import Avatar3 from "../../assets/testimonial/avatar3.png";
 import Avatar4 from "../../assets/testimonial/avatar4.png";
-import ButtonGroup from "../../components/button-group";
+import ButtonGroup from "../../components/button-group/button-group";
 
 
 export const data = [
@@ -82,7 +81,7 @@ export const carouselParams = {
     infinite: true,
     itemClass: "",
     keyBoardControl: true,
-    minimumTouchDrag: 80,
+    minimumTouchDrag: 50,
     renderButtonGroupOutside: true,
     renderDotsOutside: false,
     responsive: responsive,

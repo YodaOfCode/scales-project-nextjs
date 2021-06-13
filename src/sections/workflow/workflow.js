@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import {jsx} from 'theme-ui';
 import {Container, Grid, Box, Heading, Text} from 'theme-ui';
-import SectionHeader from 'components/section-header';
+import SectionHeader from 'components/section-header/section-header';
 
 import {data} from "./data";
 import {styles} from "./styles";
@@ -16,7 +16,7 @@ export default function WorkFlow() {
                     isWhite={true}
                 />
                 <Grid sx={styles.grid}>
-                    {data.map((item, index) => (
+                    {data.map((item) => (
                         <Box sx={styles.card} key={item.id}>
                             <Box sx={styles.iconBox}>
                                 {`0${item.id}`}

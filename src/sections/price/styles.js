@@ -1,7 +1,5 @@
 import React from "react";
 import {keyframes} from "@emotion/core";
-import ButtonGroup from "../../components/button-group";
-
 
 export const responsive = {
     desktop: {
@@ -19,29 +17,6 @@ export const responsive = {
         items: 1,
         draggable: true,
     },
-};
-
-export const sliderParams = {
-    additionalTransform: 0,
-    arrows: false,
-    autoPlaySpeed: 3000,
-    centerMode: false,
-    className: '',
-    slidesToSlide: 1,
-    items: 1,
-    containerClass: 'carousel-container',
-    customButtonGroup: <ButtonGroup/>,
-    dotListClass: '',
-    focusOnSelect: false,
-    infinite: false,
-    keyBoardControl: false,
-    itemClass: '',
-    minimumTouchDrag: 80,
-    renderButtonGroupOutside: false,
-    renderDotsOutside: false,
-    responsive: responsive,
-    showDots: false,
-    sliderClass: '',
 };
 
 export const fadeIn = keyframes`

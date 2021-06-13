@@ -1,5 +1,5 @@
-import Smart from "../../assets/services/smart.svg";
-import Secure from "../../assets/services/secure.svg";
+import Time from "../../assets/services/smart.svg";
+import Profitable from "../../assets/services/secure.svg";
 
 export const data = {
     subTitle: 'Чому саме прокат?',
@@ -7,7 +7,7 @@ export const data = {
     features: [
         {
             id: 1,
-            imgSrc: Smart,
+            imgSrc: Time,
             altText: 'Smart Features',
             title: 'Зручність',
             text:
@@ -16,7 +16,7 @@ export const data = {
         },
         {
             id: 2,
-            imgSrc: Secure,
+            imgSrc: Profitable,
             altText: 'Secure Contents',
             title: 'Вигідність',
             text:

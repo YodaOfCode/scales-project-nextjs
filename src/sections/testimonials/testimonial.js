@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import {jsx, Container, Heading, Text, Box, Image} from 'theme-ui';
-import SectionHeader from 'components/section-header';
-import Rating from 'components/rating';
+import SectionHeader from 'components/section-header/section-header';
+import Rating from 'components/rating/rating';
 import Carousel from 'react-multi-carousel';
 
 import {data, carouselParams} from "./data";
@@ -18,7 +18,7 @@ export default function TestimonialCard() {
             </Container>
             <Box sx={styles.carouselWrapper}>
                 <Carousel {...carouselParams}>
-                    {data.map((item, index) => (
+                    {data.map((item) => (
                         <Box sx={styles.reviewCard} key={item.id}>
                             <Rating rating={item.review}/>
                             <Heading as='h3' sx={styles.title}>
