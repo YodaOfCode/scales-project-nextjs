@@ -1,5 +1,5 @@
 <svg class="lol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
-     height='50px'
+     height='50px' width="125px"
      style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
      preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 128">
     <path d="M101.35 68.63h-74.7c-8.05 0-14.64 6.34-14.64 14.1c0 7.75 6.59 14.1 14.64 14.1h74.7c8.05 0 14.64-6.34 14.64-14.1c.01-7.76-6.58-14.1-14.64-14.1z"
@@ -23,5 +23,5 @@
     </g>
     <path d="M73.46 96.64c-3.6 2.14-15.4 2.14-18.99 0c-2.07-1.23-4.18.65-3.32 2.53c.84 1.85 7.28 6.13 12.85 6.13c5.56 0 11.92-4.28 12.76-6.13c.85-1.88-1.24-3.76-3.3-2.53z"
           fill="#444"/>
-    <text x="9rem" y="5rem" font-weight="bold" font-size="48">BabyInChe</text>
+    <text x="125px" y="85px" font-weight="bold" font-size="48">BabyInChe</text>
 </svg>
